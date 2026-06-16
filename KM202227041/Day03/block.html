@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일을 가진 웹페이지</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+		 /* css 스타일 시트 작성 */
+        /* 태그 이름을 그대로 셀렉터로 사용, 태그 네임 셀렉터 */
+        *{
+            background-color: beige;
+        }
+        body{
+            background-color: mistyrose;
+        }
+        /* class 네임 셀렉터 , 점(.)으로 시작, class 속성이 같은 모든 태그에 적용 */
+        .main{
+            background-color: chartreuse;
+        }
+        #red{
+            color: red;
+        }
+        h3{
+            color: purple; /* 폰트 색깔*/
+            /*대소문자 구분하지 않음*/
+			BACKGROUND-COLOR: YELLOW;
+        }
+        span{
+            color: blue;
+            font-size: 20px;
+        }
+        /* id 셀렉터 */
+        #list{
+            background-color: orange;
+        }
+        /* 가상 클래스(:hover) 셀렉터 */
+        li:hover{
+            background-color: yellowgreen;
+        }
+        strong{
+            color: red;
+        }
+        /* div 하위에 자식, 자손 선택 시 spacebar */
+        div>strong{
+            color: green;
+        }
+        div>strong{
+            color: aquamarine;
+        }
+        #um{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3> class="<main>는 따로 하고 싶은데 ...</h3>
+    <h3> class="main">다 적용이 되네...</h3>
+    <h3> class="main" id="red">어떻게 하면나만 따로 글씨를 빨간 색으로 적용할 수 있을까?</h3>
+	<h3>wed Programming</h3>
+	<hr>
+    <div>
+		<div>1학기 <strong> 학숩 내용</strong></div>
+		<ul id="list">
+			<li>HTML</li>
+			<li>C#기초</li>
+			<li><strong id="um">취창업멘토링(3), 취창업멘토링(5)</strong></li>
+		</ul>
+    </div>
+    <!--주석처리-->
+    <h3>css 스타일 맛보기</h3>
+	<hr>
+		<p>
+			
+			나는 <span>웹 프로그래밍</span>을 좋아합니다.
+		</p>
+</body>
+</html>

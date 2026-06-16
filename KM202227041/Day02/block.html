@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두 번째 시간</title>
+    <style>
+        /* css 스타일 시트 적용 */
+        /* background-color,color, border: 프로퍼티 */
+        /* 셀렉터(프로퍼티: 값;) */
+        body{/*  태그 네임 셀렉터 */
+            background-color: mistyrose;
+        }
+        H3{
+            COLOR : purple;
+        }
+        h3{
+            color: purple;
+        }
+        hr{
+            border: 5px dotted yellowgreen;
+        }
+        span{
+            font-size: 20px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <p>
+        CSS(Cascading Style Sheets)는 HTML 문서의 색이나 모양 등 외관을 꾸미는 언어, CSS로 작성된 코드를 스타일 시트(style sheet)라고 부름
+        CSS level3 기능 : 색상과 배경, 텍스트, 폰, 박스 모델, 비주얼 포맷 및 효과, 리스트, 테이블, 사용자 인터페이스
+    </p>
+    <h3>링크 만들기</h3>
+    <ul>
+        <!-- 텍스트의 색깔 - 첫 방문 : blue, 방문 후 : purple, 클릭 시 : red -->
+        <li><a href="https://www.naver.com" style="color: #0066cc; text-decoration: none;">네이버</a></li>
+        <li><a href="https://www.daum.net" style="color: #0066cc; text-decoration: none;">다음</a></li>
+        <li><a href="https://www.yuhan.ac.kr/index.do" style="color: #0066cc; text-decoration: none;">유한대학교</a></li>
+        <li><a href="https://www.yuhan.ac.kr/index.do" target="_blank"><img src="https://www.yuhan.ac.kr/ibuilder/template/theme_skin/theme900/images/introduce/img_school_k.png" alt="유한대학교"></a></li>
+      
+    </ul>
+    <!-- 순서가 없는 리스트 만들기 unordered list -->
+    <h3>순서가 없는 리스트 만들기</h3><hr>
+    <ul>
+        <li>김영철</li>
+        <li>서수석</li>
+        <li>이성현</li>
+        <li>이윤임</li>
+        
+    </ul>
+    <!-- 리스트 만들기, 순서가 있는 리스트 ordered list -->
+    <h3>순서가 있는 리스트 만들기</h3><hr>
+    <!-- 1, A, a, I, i -->
+    <ol type="a">
+        <li>물 끓이기</li>
+        <li>라면과 스프를 넣는다</li>
+        <li>파를 썰어 먹는다.</li>
+        <li>5분 후 먹는다.</li>
+        
+    </ol>
+    <!-- 이미지 삽입 -->
+    <h3>이미지 삽입</h3><hr>
+    <!-- src는 이미지 파일의 url -->
+    <!-- alt는 이미지가 없거나 손상되었을 때 출력, 필수속성 -->
+    <img src="myMelody.png" alt="마이멜로디" width="500" height="500">
+
+    <h3>사랑</h3><hr>
+    <div style="background-color:  skyblue; padding: 20px;">
+        내가 사람의 방언과 천사의 말을 할지라도 <span style="color: red;">사랑</span>이 없으면 소리 나는 구리와 울리는 꽹과리가 되고,
+        <span style="color: red;">사랑</span>이 없으면 아무것도 아니라.
+    </div>
+</body>
+</html>

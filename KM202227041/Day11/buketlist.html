@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버킷리스트 만들기</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;            
+            background-color: #f4f4f4;
+            margin: 0 auto;            
+        }
+        .all
+        {
+            width: 1200px;
+        }
+        h1{
+            margin: bottom 20px;
+        }
+        section,footer{
+            height: 330px;
+        }
+        .box{
+            width : 390px;
+            border: 1px solid black;
+            float: left;
+            overflow: hidden;
+        }
+        .box img{
+            height: 250px;
+        }
+        .textBox{
+            height: 60px;
+            background-color: skyblue;
+            position: relative;
+        }
+        .textb{
+            position: absolute;
+            top: 50%;
+            left : 50%;
+            transform: translate(-50%,-50%);
+            font-size: 25px;
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="all">
+        <h1>강민의 버킷리스트</h1>
+        죽기 전에 하고 싶은 일
+        <section>
+            <div class="box">
+                <div class="imgBox"><img src="https://dimg04.tripcdn.com/images/1n96z224x8xetshq6B7D4.jpg" alt=""></div>
+                <div class="textBox"><b class="textb">일본에서 한달살기</b></div>
+            </div>
+            <div class="box">
+                <div class="imgBox"><img src="https://i.namu.wiki/i/u8R5KiGoTZDukiFBMC7Zx9PacXJjwKyX3Opf51EQlogI64jXKzc0wIL4TbfUEl6-FBmSVRmVbrS3ax2Mwvpd4A.webp" alt=""></div>
+                <div class="textBox"><b class="textb">아스날 우승 직관</b></div>
+            </div>
+            <div class="box">
+                <div class="imgBox"><img src="https://d18-invdn-com.investing.com/content/pic37c9d981b059700b01a4142e326ae817.jpeg" alt=""></div>
+                <div class="textBox"><b class="textb">주식 버거 먹기</b></div>
+            </div>
+        </section>
+        <footer>
+            <div class="box">
+                <div class="imgBox"><img src="https://i.namu.wiki/i/rsyVGsNVAOo-evtNcaw6FCiaV15kXGQGIUmanlyNd18a5YP17YPzsP29nEK4e1266jhqS8B7tmDynuIxew5a6w.webp" alt=""></div>
+                <div class="textBox"><b class="textb">포르쉐 박스터</b></div>
+            </div>
+            <div class="box">
+                <div class="imgBox"><img src="" alt=""></div>
+                <div class="textBox"><b class="textb"></b></div>
+            </div>
+            <div class="box">
+                <div class="imgBox"><img src="" alt=""></div>
+                <div class="textBox"><b class="textb"></b></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
